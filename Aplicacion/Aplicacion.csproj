@@ -39,10 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstracciones\ICreacionEmpresaServicio.cs" />
-    <Compile Include="Abstracciones\ICreacionTipoDocumentoServicio.cs" />
-    <Compile Include="CreacionEmpresaServicio.cs" />
-    <Compile Include="CreacionTipoDocumentoServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +46,9 @@
       <Project>{a5fd6459-213f-4631-b7ae-e0e332a468cc}</Project>
       <Name>Dominio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstracciones\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

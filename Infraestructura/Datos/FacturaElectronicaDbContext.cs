@@ -1,4 +1,4 @@
-﻿using Dominio;
+﻿using Dominio.Entities;
 using Infraestructura.Datos.Mapeos;
 using System;
 using System.Collections.Generic;
@@ -13,9 +13,12 @@ namespace Infraestructura.Datos
     {
         #region Propiedades
 
-        public IDbSet<Empresa> Empresas { get; set; }
-
-        public IDbSet<TipoDocumento> TiposDocumentos { get; set; }
+        public IDbSet<JuegoVersion> JuegoVersion { get; set; }
+        public IDbSet<Equipo> Equipo { get; set; }
+        public IDbSet<Jugador> Jugador { get; set; }
+        public IDbSet<Liga> Liga { get; set; }
+        public IDbSet<Partido> Partido { get; set; }
+        public IDbSet<ResultadoPartido> ResultadoPartido { get; set; }
 
         #endregion
 
@@ -32,9 +35,7 @@ namespace Infraestructura.Datos
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new EmpresaConfiguracionMapeo());
-            modelBuilder.Configurations.Add(new TipoDocumentoConfiguracionMapeo());
-
+            modelBuilder.Configurations.Add(new JuegoVersionConfiguracionMapeo());
             base.OnModelCreating(modelBuilder);
         }
 
