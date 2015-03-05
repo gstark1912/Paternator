@@ -36,6 +36,11 @@ namespace Infraestructura.Datos
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new JuegoVersionConfiguracionMapeo());
+            modelBuilder.Configurations.Add(new EquipoConfiguracionMapeo());
+            modelBuilder.Configurations.Add(new JugadorConfiguracionMapeo());
+            modelBuilder.Configurations.Add(new LigaConfiguracionMapeo());
+            modelBuilder.Configurations.Add(new PartidoConfiguracionMapeo());
+            modelBuilder.Configurations.Add(new ResultadoPartidoConfiguracionMapeo());
             base.OnModelCreating(modelBuilder);
         }
 

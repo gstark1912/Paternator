@@ -46,8 +46,13 @@
     <Compile Include="Entities\Partido.cs" />
     <Compile Include="Entities\ResultadoPartido.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\IEquipoRepositorio.cs" />
     <Compile Include="Repositorios\IJuegoVersionRepositorio.cs" />
+    <Compile Include="Repositorios\IJugadorRepositorio.cs" />
+    <Compile Include="Repositorios\ILigaRepositorio.cs" />
+    <Compile Include="Repositorios\IPartidoRepositorio.cs" />
     <Compile Include="Repositorios\IRepositorio.cs" />
+    <Compile Include="Repositorios\IResultadoPartidoRepositorio.cs" />
     <Compile Include="Resources\Enums.cs" />
     <Compile Include="Resources\OperationResult.cs" />
     <Compile Include="Resources\PageData\PagedDataParameters.cs" />

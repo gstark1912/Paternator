@@ -50,14 +50,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\IFacturaElectronicaDbContext.cs" />
+    <Compile Include="Datos\Mapeos\EquipoConfiguracionMapeo.cs" />
     <Compile Include="Datos\Mapeos\JuegoVersionConfiguracionMapeo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Datos\Mapeos\JugadorConfiguracionMapeo.cs" />
+    <Compile Include="Datos\Mapeos\LigaConfiguracionMapeo.cs" />
+    <Compile Include="Datos\Mapeos\PartidoConfiguracionMapeo.cs" />
+    <Compile Include="Datos\Mapeos\ResultadoPartidoConfiguracionMapeo.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="Repositorio.cs" />
+    <Compile Include="Repositorios\EquipoRepositorio.cs" />
     <Compile Include="Repositorios\JuegoVersionRepositorio.cs" />
     <Compile Include="Datos\FacturaElectronicaDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\JugadorRepositorio.cs" />
+    <Compile Include="Repositorios\LigaRepositorio.cs" />
+    <Compile Include="Repositorios\PartidoRepositorio.cs" />
+    <Compile Include="Repositorios\ResultadoPartidoRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
